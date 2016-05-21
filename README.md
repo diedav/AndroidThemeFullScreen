@@ -1,2 +1,2 @@
-Android Studio Aplication on FullScreen
+Android Studio Aplication on FullScreen /n
 minSdkVersion 14
