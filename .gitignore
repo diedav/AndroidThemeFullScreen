@@ -1,0 +1,39 @@
+===================================================================================
+<!-- styles.xml -->
+
+<style name="ThemeFullscreen" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+===================================================================================
+<!-- AndroidManifest.xml -->
+
+<application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/ThemeFullscreen"
+        >
+        
+        <activity android:name=".MainActivity"
+            android:screenOrientation="landscape" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+</application>
+===================================================================================
+<!-- MainActivity.java -->
+
+public class MainActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+}
+
+===================================================================================
